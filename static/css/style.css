@@ -20,6 +20,26 @@ img {
   width: 60px;
 }
 
+.welcome{
+  background-color: rgb(211, 255, 242);
+  margin: 0vh;
+  font-size: 30px;
+  font-family:cursive
+}
+.welcome p{
+  margin :0px;
+  margin-left: 10vh;
+}
+
+.content{
+  text-align: center;
+  margin-top: 30vh;
+  top: 30vh;
+}
+
+.credits{
+  margin-top: 45vh;
+}
 .table-users {
   border: 1px solid #327a81;
   border-radius: 10px;
