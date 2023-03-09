@@ -33,8 +33,11 @@ def index():
         product_html = bs(productPage, "html.parser")
 
         product_name = product_html.find('div', class_="aMaAEs").div.text
-
-        rvuA = product_html.find('div',class_="col JOpGWq").findAll('a')
+        try:
+            rvuA = product_html.find('div',class_="col JOpGWq").findAll('a')
+        except:
+            rvuA = product_html.find('div',class_="col JOpGWq _33R3aa").findAll('a')
+        
         review_url = 'https://www.flipkart.com' + rvuA[len(rvuA)-1]['href']
         uClient = uReq(review_url)
         reviewPage = uClient.read()
